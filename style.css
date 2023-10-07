@@ -2,44 +2,115 @@
 font-family: 'Arya', sans-serif;
 font-family: 'Spicy Rice', serif; */
 
+#blocker{
+    display: flex;
+    justify-content: center;
+}
+
+#candy {
+    position: absolute;
+    animation-name: dripdrop;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;}
+
+@keyframes dripdrop {
+    0%   {height: 50px}
+    25%  {height:100px;}
+    50%  {height:200px;} 
+    75%  {height:300px;} 
+    100% {height:400px;}
+}
+
 header{
+    position: relative;
     margin: auto;
     display: flex;
     justify-content: center;
     max-width: 1200px;
     height: 250px;
     background: rgb(255,204,241);
-    background: linear-gradient(180deg, rgba(255,204,241,1) 0%, rgba(255,204,241,0.25) 100%);
-
+    background: linear-gradient(180deg, rgba(255,204,241,0.5) 0%, rgba(255,204,241,0.8) 100%);
+    border-radius: 20px;
 }
 
+
 #banner{
-    background-color:rgb(192, 151, 168, 21%);
+    background-color:rgb(192, 151, 168, 20%);
     text-align: center;
     align-self: center;
     font-family: 'Amaranth', sans-serif;
     color: #7E6767;
+    font-size: 16px;
     border-radius: 20px;
     padding: 10px;
     padding-left: 60px;
     padding-right: 60px;
+    transition: 1s all ease-out
+}
+
+#banner:hover{
+    background-color: rgba(239, 147, 197, 0.7);
+    border: #fff0f9c0 8px solid;
+    padding-left: 90px;
+    padding-right: 90px;
+    color:#ffffff;
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
 }
 
 #portaltitle {
     font-family: 'Spicy Rice', serif;
     color: #FFFFFF;
+    font-size: 30px;
     text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 li {
     list-style-type: none;
+    margin-left: -20px;
 }
 
 li a {
     text-decoration: none;
     font-family: 'Arya', sans-serif;
+    font-size: 16px;
     color: #2E2929;
     line-height: 1.7em;
+}
+
+li a:hover {
+    background-color: #ffffffde;
+    padding-left: 1px;
+    padding-right: 3px;
+    border-radius: 10px;
+}
+
+#back {
+    background-color: rgb(255, 255, 255,0.7);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#back2{
+    background-color: rgba(194, 164, 164, 0.7);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#back3 {
+    background-color: rgba(255, 224, 224, 0.7);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 190px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 main {
@@ -52,16 +123,32 @@ main {
 
 
 body {
-    background-color: #FFF0D9;
     min-width: 900px;
-}
+    background-color: #FFF0D9;}
 
 section{
     margin-top: 30px;
-    background-color: aliceblue;
     border-radius: 20px;
     padding: 50px;
     flex: 1;
+}
+
+#icing{
+    background-image: url(images/candy2.png);
+    border:#99d8ed 10px solid;
+    background-size: cover;
+}
+
+#chocolate{
+    background-image: url(images/choco.png);
+    border:#312827 10px solid;
+    background-size: cover;
+}
+
+#swirl {
+    background-image: url(images/candy.png);
+    border:#e88c8c 10px solid;
+    background-size: cover;
 }
 
 footer {
@@ -70,7 +157,7 @@ footer {
     text-align: center;
     font-family: 'Amaranth', sans-serif;
     color: #9A9090;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 0.7em;
 }
 
@@ -81,4 +168,5 @@ footer a {
 section h2 {
     font-family: 'Amaranth', sans-serif;
     color: #2E2929;
+    font-size: 23px;
 }
