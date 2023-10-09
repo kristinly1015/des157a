@@ -34,7 +34,6 @@ header{
     border-radius: 20px;
 }
 
-
 #banner{
     background-color:rgb(192, 151, 168, 20%);
     text-align: center;
@@ -51,13 +50,37 @@ header{
 
 #banner:hover{
     background-color: rgba(239, 147, 197, 0.7);
-    border: #fff0f9c0 8px solid;
+    border: #fff0f9c0 7px solid;
     padding-left: 90px;
     padding-right: 90px;
     color:#ffffff;
     text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
     cursor:pointer;
+    box-shadow: 3px 2px 15px 0px rgba(255,255,255,1);
+    animation: wiggle 2s ease forwards;
 }
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-3deg);
+    }
+    20% {
+      transform: rotate(4deg);
+    }
+    30% {
+      transform: rotate(-4deg);
+    }
+
+    40% {
+      transform: rotate(3deg);
+    }
+    50%{
+      transform: rotate(0);
+    }
+  }
 
 #portaltitle {
     font-family: 'Spicy Rice', serif;
@@ -80,7 +103,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #ffffffde;
+    background-color: rgba(255, 255, 255, 0.6);
     padding-left: 1px;
     padding-right: 3px;
     border-radius: 10px;
