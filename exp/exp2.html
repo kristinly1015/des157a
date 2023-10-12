@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation - Functions & DOM</title>
+</head>
+
+<body>
+    <header>
+        <h1>Experiment 2</h1>
+        <h2>What color is the computer thinking of: red, yellow, green, or blue?</h2>
+    </header>
+
+    <p id="computer">Selection</p>
+    <p id="you">Your response</p>
+    <p id="result">Answer</p>
+
+    
+    <script>
+
+        var colors = ['red', 'yellow', 'green', 'blue'];
+
+        function randomInt(min,max){
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var final = min + roundedRandomVal;
+            return final;
+        }
+
+        function checkAnswer(){
+        var askColor = prompt('What color is the computer thinking of? - red, yellow, green, or blue?', '');
+        var randomColor = (colors[randomInt(0,3)]);
+
+        var heading= document.querySelector('#computer');
+        heading.innerHTML = (`The computer chose ${randomColor}.`);
+        console.log(randomColor);
+
+        var responser=document.querySelector('#you');
+        responser.innerHTML = (`You chose ${askColor}.`);
+        console.log(askColor);
+
+
+        var end = document.querySelector('#result');
+
+        if (randomColor == askColor){
+            end.innerHTML="You're right!";
+            console.log("You're right!");
+        }
+ 
+        else {
+            end.innerHTML="Try again!";
+            console.log("Try again!");
+        }
+    }
+  
+        checkAnswer();
+
+    </script>
+
+    <!--First I made a prompt asking the user to input a guess for the computer's selected color - red, green, yellow, or blue. I then made an array for the potential selected colors. Then, I made a randomInt function and set it equal to a variable randomColor, so the computer would select a random color out of the array. I included in another function with selections that if the user chose a color that was equivalent to the randomly selected number, then the DOM would input a "You're right!" message into the HTML's body paragraphs. If the user was incorrect, then the DOM would upload the message, "Try again."-->
+</body>
+</html>
