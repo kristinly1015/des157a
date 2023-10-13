@@ -1,0 +1,102 @@
+body {
+    background-color: #2a2a2a;
+    background-image: url(../images/twinkle.png);
+    padding: 50px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+section {
+    margin-top: 40px;
+    background-color: #ffffff;
+    background: linear-gradient(180deg, rgba(197, 232, 255, 0.84) 0%, rgba(255, 192, 218, 0.854) 100%);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 20px;
+    border: 10px solid rgb(255, 222, 236);
+    box-shadow: 3px 2px 15px 0px rgba(255,255,255,1);
+
+}
+
+img {
+    margin-top: 5px;
+}
+
+time {
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: rgba(255, 209, 228, 0.898);
+    border-radius: 20px;
+    width: 700px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 3px 2px 15px 0px rgba(255,255,255,1);
+    border: 5px solid rgb(238, 235, 235);
+}
+
+p {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    font-size: 16px;
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0.72);
+    border-radius: 10px;
+    padding: 60px;
+    width: 700px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Amaranth', sans-serif;
+    color: #ffffff;
+    font-size: 45px;
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: 'Amaranth', sans-serif;
+    color: #2E2929;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Amaranth', sans-serif;
+    color: #2E2929;
+    font-size: 25px;
+}
+
+h2, h3, time {
+    color: rgb(214, 108, 172);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    color: rgb(195, 238, 255);
+    line-height: 0.7em;
+}
+
+footer p {
+    font-size: 18px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(156, 224, 251);
+}
