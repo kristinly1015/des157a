@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs 2.0</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="blocker">
+    <img id="wood" src="./images/wood.png" alt="wood" height="220px" width="560px"></div>
+    <header>
+        <h1>Haunted House Madlibs</h1>
+    </header>
+
+    <main>
+   
+        <form>
+            <fieldset> 
+            <h2>Enter the following to create a haunted story:</h2>
+            <div id="total">
+            <div id="one">
+            <label for id="adjective">1. Adjective</label>
+            <input type=”text” id="adjective" required>
+
+            <label for id="place">2. A place</label>
+            <input type=”text” id="place" required>
+
+            <label for id="verbing">3. Verb (-ing)</label>
+            <input type=”text” id="verbing" required>
+
+            <label for id="adjective2">4. Adjective</label>
+            <input type=”text” id="adjective2" required>
+
+            <label for id="noun">5. Noun</label>
+            <input type=”text” id="noun" required>
+
+            <label for id="verb">6. Verb</label>
+            <input type=”text” id="verb" required>
+            </div>
+
+            <div id="two">
+            <label for id="noun2">7. Noun</label>
+            <input type=”text” id="noun2" required>
+
+            <label for id="body">8. Body Part</label>
+            <input type=”text” id="body" required>
+
+            <label for id="adjective3">9. Adjective</label>
+            <input type=”text” id="adjective3" required>
+
+            <label for id="body2">10. Body Part</label>
+            <input type=”text” id="body2" required>
+
+            <label for id="adverb">11. Adverb</label>
+            <input type=”text” id="adverb" required>
+
+            <label for id="noun3">12. Noun</label>
+            <input type=”text” id="noun3" required>
+            </div>
+
+            </div>
+
+            <input type="submit" id="goe" class="open" value="CREATE">
+        </fieldset>
+
+        </form>
+
+
+        <section id="overlay" class="hidden">
+
+            <article>
+                <h2 id="haunted">The Haunted House</h2>
+                <p>One late night, you walk into the _____ house that you rented in the old _____. You have a competition for _____ and need to rest up somewhere for the evening. The inside of the house looks eerie and you shiver at how ______ the air feels. When you walk into the bedroom, you suddenly see a strange-looking _____ standing in the corner. You shriek on the top of your lungs and decide to leave immediately. You quickly _____ towards the front door but it’s blocked off by a giant ______. 
+                You use your ______ to try and shoo them furiously away, but it’s no use. Their __cute___ eyes bear into your soul and you feel a sense of eternal doom in the pit of your _______. You can see their faces laughing _____ at your expressed fear. Your life flashes before you and you think of your ______ before your final breath. It’s all over.</p>
+
+                <button class="close">CLOSE</button>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    
+</body>
+
+</html>
