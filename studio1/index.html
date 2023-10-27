@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <img id="batt" src="./images/star.png" alt="bats" width="1280" height="700">
     <div id="blocker">
     <img id="wood" src="./images/wood.png" alt="wood" height="220" width="560"></div>
     <header>
@@ -44,11 +45,13 @@
                     <label for="noun">5. Noun</label>
                     <input type="text" id="noun" >
 
-                    <label for="verb">6. Verb</label>
-                    <input type="text" id="verb">
+
                 </div>
 
-                <div id="two">
+                <div id="two">                    
+                    <label for="verb">6. Verb</label>
+                    <input type="text" id="verb">
+
                     <label for="noun2">7. Noun</label>
                     <input type= "text" id="noun2" >
 
@@ -60,12 +63,6 @@
 
                     <label for="body2">10. Body Part</label>
                     <input type= "text" id="body2">
-
-                    <label for="adverb">11. Adverb</label>
-                    <input type="text" id="adverb">
-
-                    <label for="noun3">12. Noun</label>
-                    <input type="text" id="noun3">
                 </div>
 
             </div>
@@ -77,16 +74,16 @@
         </form>
 
 
-        <section id="overlay" class="hidden">
+        <div id="overlay" class="hidden">
 
             <article id="madlib">
                 <h2 id="haunted">The Haunted House</h2>
-                <p></p>
+                <p id="storie"></p>
 
                 <button class="close">CLOSE</button>
             </article>
 
-        </section>
+        </div>
 
     </main>
 
