@@ -14,7 +14,7 @@ body{
 }
 
 #taper2{
-    position: absolute;
+    position: absolute; 
     z-index: 1;
     top: 570px;
     left: 299px;

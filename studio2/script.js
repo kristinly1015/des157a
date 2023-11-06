@@ -59,8 +59,8 @@
         event.preventDefault();
         document.querySelector('#overlay').className= 'showing';
         name.innerHTML="Mochi";
-        rep.innerHTML="Mochi is part blobfish and part ice cream! She originated from a Miniso store in SF and was the first purchased stuffed animal I bought for my college apartment in 2021."
-        pict.src = './images/blob.jpg'
+        rep.innerHTML="Mochi is part blobfish and part ice cream! She originated from a Miniso store in SF and was the first purchased stuffed animal I bought for my college apartment in 2021.";
+        pict.src = './images/blob.jpg';
         backer.style.background= "rgb(232, 200, 217)";
         head.style.color = "rgb(220, 151, 188)";
         foot.style.color = "rgb(220, 151, 188)";
