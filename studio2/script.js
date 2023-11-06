@@ -55,6 +55,18 @@
 
 
 
+    document.querySelector('#cat').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#overlay').className= 'showing';
+        name.innerHTML="Neko";
+        rep.innerHTML="Neko is a cat who is part of a Japanese stuffed animal brand called Sumikko. I won her with my saved tickets at a Round 1 arcade in 2022.";
+        pict.src = "./images/cat.jpg";
+        backer.style.background= "rgb(0,0,0)";
+        head.style.color = "rgb(220, 151, 188)";
+        foot.style.color = "rgb(220, 151, 188)";
+    });
+
+
     document.querySelector('#fish').addEventListener('click',function(event){
         event.preventDefault();
         document.querySelector('#overlay').className= 'showing';
