@@ -4,7 +4,7 @@
 
     const rep = document.querySelector('#bio');
     const name = document.querySelector('#aName');
-    const pict = document.querySelector('#pic');
+    const pict = document.querySelector('img #pic');
     const backer = document.querySelector('body');
     const head = document.querySelector('h1');
     const foot = document.querySelector('footer');
