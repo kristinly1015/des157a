@@ -54,7 +54,6 @@
     });
 
 
-
     document.querySelector('#cat').addEventListener('click',function(event){
         event.preventDefault();
         document.querySelector('#overlay').className= 'showing';
