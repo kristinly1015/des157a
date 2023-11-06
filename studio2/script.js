@@ -4,7 +4,7 @@
 
     const rep = document.querySelector('#bio');
     const name = document.querySelector('#aName');
-    const pict = document.querySelector('img #pic');
+    const pict = document.querySelector('#pic');
     const backer = document.querySelector('body');
     const head = document.querySelector('h1');
     const foot = document.querySelector('footer');
@@ -60,7 +60,7 @@
         document.querySelector('#overlay').className= 'showing';
         name.innerHTML="Mochi";
         rep.innerHTML="Mochi is part blobfish and part ice cream! She originated from a Miniso store in SF and was the first purchased stuffed animal I bought for my college apartment in 2021.";
-        pict.src = './images/blob.jpg';
+        pict.src = "./images/blob.jpg";
         backer.style.background= "rgb(232, 200, 217)";
         head.style.color = "rgb(220, 151, 188)";
         foot.style.color = "rgb(220, 151, 188)";
