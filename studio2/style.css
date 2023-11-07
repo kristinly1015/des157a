@@ -162,8 +162,7 @@ footer{
     display: flex;
     padding: 30px;
     gap: 35px;
-    background-color: rgb(255, 231, 244);
-    border: 12px solid rgb(255, 205, 232);
+    border: 12px solid;
     border-radius: 20px;
 }
 
@@ -215,7 +214,6 @@ button{
     display: block;
     margin: auto;
     border-radius: 10px;
-    background-color: rgb(255, 201, 241);
 }
 
 button:hover{
