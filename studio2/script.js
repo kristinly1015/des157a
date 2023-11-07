@@ -2,6 +2,8 @@
     'use strict';
     console.log('reading js');
 
+    //create variables for overlay information and body elements to control color palette
+    //using query selector to assign variables to certain elements by name or ID
     const rep = document.querySelector('#bio');
     const name = document.querySelector('#aName');
     const pict = document.querySelector('#pic');
@@ -9,7 +11,8 @@
     const head = document.querySelector('h1');
     const foot = document.querySelector('footer');
 
-    /*hover effect*/
+    //when mouse hovers on each object, a new picture will replace to show an outlined version of the hovered object
+   //event listener will make it so that when the mouse is over specific div box, it will replace the main image with a new image of the hovered object outlined
     document.querySelector('#fish').addEventListener('mouseover',function(){        
         document.querySelector('#collection').src= './images/outline1.jpg';
     });
@@ -46,14 +49,17 @@
         document.querySelector('#collection').src= './images/outline9.jpg';
     });
     
-    /*hover effect*/
-    
+   
 
+    //if mouse is not hovering on any object/div area, the image will go back to main image
     document.addEventListener('mouseout',function(){
         document.querySelector('#collection').src= './images/main.jpg'; 
     });
 
+    //end of hovered image code
 
+
+    //if mouse clicks on certain object, overlay will appear and 
     document.querySelector('#cat').addEventListener('click',function(event){
         event.preventDefault();
         document.querySelector('#overlay').className= 'showing';
