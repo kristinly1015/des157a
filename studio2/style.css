@@ -2,7 +2,7 @@
 font-family: 'Lilita One', sans-serif;*/
 
 body{
-    background-color: #9f7e62;
+    background-color: rgb(158, 125, 97);
     position: relative;
 }
 
@@ -39,7 +39,7 @@ main{
 h1 {
     text-align: center;
     font-family: 'Lemon', serif;
-    color: #794514;
+    color: rgb(123, 70, 20);
     text-shadow: 1px 4px 5px rgba(255, 255, 255, 0.9);
     font-size: 37px;
 }

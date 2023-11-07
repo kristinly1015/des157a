@@ -295,6 +295,11 @@
         document.querySelector('#overlay').className=
         'hidden';
 
+        //return background, h1, and footer colors to original color after closing overlay
+        backer.style.background= "rgb(158, 125, 97)";
+        head.style.color = "rgb(123, 70, 20)";
+        foot.style.color = "rgb(123, 70, 20)";
+
         //return tape image opacity to normal after closing overlay
         document.querySelector('#taper').style.opacity= "1";
         document.querySelector('#taper2').style.opacity= "1";
