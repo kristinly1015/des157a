@@ -2,8 +2,29 @@
 font-family: 'Lilita One', sans-serif;*/
 
 body{
-    background-color: rgb(158, 125, 97);
-    position: relative;
+    background-color: rgb(180, 147, 118);
+    position: relative;    
+    animation-name: colorchange;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes colorchange {
+0%   {background-color:rgb(254, 244, 204);}
+25%  {background-color:rgb(229, 255, 201);}
+50%  {background-color:rgb(203, 255, 253);} 
+75%  {background-color:rgb(224, 204, 255);} 
+100% {background-color:rgb(255, 223, 244);}
+}
+
+
+#pattern{
+    position: absolute;
+    opacity: 0.3;
+    z-index: -2;
 }
 
 #taper{
@@ -39,14 +60,14 @@ main{
 h1 {
     text-align: center;
     font-family: 'Lemon', serif;
-    color: rgb(123, 70, 20);
+    color: rgb(79, 79, 79);
     text-shadow: 1px 4px 5px rgba(255, 255, 255, 0.9);
     font-size: 37px;
 }
 
 footer{
     font-family: 'Lilita One', sans-serif;
-    color: #713A08;
+    color: rgb(79, 79, 79);
     display: flex;
     justify-content: center;
     justify-content: space-between;

@@ -78,6 +78,7 @@
         pict.src = "./images/cat.jpg";
 
         //the background, h1, and footer color will change according to the stuffed animal clicked
+        //make color palette yellow
         backer.style.background= "rgb(254, 251, 200)";
         head.style.color = "rgb(208, 201, 73)";
         foot.style.color = "rgb(208, 201, 73)";
@@ -92,6 +93,9 @@
         //lower opacity of tape images when overlay pops up
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        //stop background color change animation when overlay appears
+        backer.style.animation = 'none';
     });
 
 
@@ -111,6 +115,7 @@
         pict.src = "./images/blob.jpg";
 
         //change style colors
+        //make color palette light pink
         backer.style.background= "rgb(232, 200, 217)";
         head.style.color = "rgb(220, 151, 188)";
         foot.style.color = "rgb(220, 151, 188)";
@@ -125,6 +130,9 @@
         //decrease opacity of tape images
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        //stop background animation
+        backer.style.animation = 'none';
     });
 
 
@@ -138,6 +146,7 @@
 
         pict.src = "./images/moo.jpg";
 
+        //make color palette dark blue
         backer.style.background= "rgb(218, 241, 255)";
         head.style.color = "rgb(110, 169, 208)";
         foot.style.color = "rgb(110, 169, 208)";
@@ -149,6 +158,8 @@
 
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        backer.style.animation = 'none';
     });
 
 
@@ -160,7 +171,8 @@
         rep.innerHTML="Alan Jr. was given to me by my partner on Christmas of 2022. He was paired with My Melody, the bunny plush, for the gift. He is a shiba dog and has a secret pocket to store items!";
 
         pict.src = "./images/junior.jpg";
-
+        
+        //make color palette orange
         backer.style.background= "rgb(255, 220, 202)";
         head.style.color = "rgb(244, 151, 105)";
         foot.style.color = "rgb(244, 151, 105)";
@@ -172,6 +184,8 @@
 
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        backer.style.animation = 'none';
     });
 
 
@@ -184,6 +198,7 @@
 
         pict.src = "./images/bighead.jpg";
 
+        //make color palette yellow-brown
         backer.style.background= "rgb(226, 204, 164)";
         head.style.color = "rgb(168, 142, 92)";
         foot.style.color = "rgb(168, 142, 92)";
@@ -195,6 +210,8 @@
 
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        backer.style.animation = 'none';
     });
 
     document.querySelector('#bear').addEventListener('click',function(event){
@@ -206,6 +223,7 @@
 
         pict.src = "./images/bear.jpg";
 
+        //make color palette red
         backer.style.background= "rgb(255, 215, 214)";
         head.style.color = "rgb(214, 100, 98)";
         foot.style.color = "rgb(214, 100, 98)";
@@ -217,6 +235,8 @@
 
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        backer.style.animation = 'none';
     });
 
 
@@ -225,10 +245,11 @@
         document.querySelector('#overlay').className= 'showing';
 
         name.innerHTML="Rilakkuma";
-        rep.innerHTML="Rilakkuma is a popular character from Japan and this particular plushie is special to me because it was given to me by my internet best friend of 12 years. They sent it to me as a surprise holiday gift in 2022.";
+        rep.innerHTML="Rilakkuma is a popular character from Japan and this particular plushie is special to me because it was gifted by my internet best friend of 12 years. They sent it to me as a surprise holiday gift in 2022.";
 
         pict.src = "./images/rila.jpg";
 
+        //make color palette yellow-orange
         backer.style.background= "rgb(255, 232, 174)";
         head.style.color = "rgb(225, 184, 80)";
         foot.style.color = "rgb(225, 184, 80)";
@@ -240,6 +261,8 @@
 
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        backer.style.animation = 'none';
     });
 
     document.querySelector('#lambs').addEventListener('click',function(event){
@@ -250,7 +273,8 @@
         rep.innerHTML="Kristin Jr. is a small lamb I chose at the arcade and was won for me by my partner in 2023 of this year. It was his first claw machine victory, so it was really exciting.";
 
         pict.src = "./images/lamb.jpg";
-
+        
+        //make color palette light blue
         backer.style.background= "rgb(214, 242, 253)";
         head.style.color = "rgb(105, 187, 219)";
         foot.style.color = "rgb(105, 187, 219)";
@@ -262,6 +286,8 @@
 
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        backer.style.animation = 'none';
     });
 
     document.querySelector('#mel').addEventListener('click',function(event){
@@ -269,10 +295,11 @@
         document.querySelector('#overlay').className= 'showing';
 
         name.innerHTML="My Melody";
-        rep.innerHTML="My Melody was a paired gift with Alan Jr. the shiba dog. She given to me by my partner for Christmas of 2022. She is a popular Sanrio bunny character and has a removable hood.";
+        rep.innerHTML="My Melody was a paired gift with Alan Jr. the shiba dog. She was given to me by my partner for Christmas of 2022. She is a popular Sanrio bunny character and has a removable hood.";
 
         pict.src = "./images/melody.jpg";
 
+        //make color palette warm pink
         backer.style.background= "rgb(255, 224, 233)";
         head.style.color = "rgb(219, 130, 155)";
         foot.style.color = "rgb(219, 130, 155)";
@@ -284,6 +311,8 @@
 
         document.querySelector('#taper').style.opacity= "0.3";
         document.querySelector('#taper2').style.opacity= "0.3";
+
+        backer.style.animation = 'none';
     });
 
     //end of event listeners for clicking each individual animal 
@@ -295,14 +324,10 @@
         document.querySelector('#overlay').className=
         'hidden';
 
-        //return background, h1, and footer colors to original color after closing overlay
-        backer.style.background= "rgb(158, 125, 97)";
-        head.style.color = "rgb(123, 70, 20)";
-        foot.style.color = "rgb(123, 70, 20)";
-
         //return tape image opacity to normal after closing overlay
         document.querySelector('#taper').style.opacity= "1";
         document.querySelector('#taper2').style.opacity= "1";
+
     });
 
     //this function allows users to exit the overlay by also hitting the escape key
@@ -313,7 +338,8 @@
 
         //return tape image opacity to normal after closing overlay
         document.querySelector('#taper').style.opacity= "1";
-        document.querySelector('#taper2').style.opacity= "1";        
+        document.querySelector('#taper2').style.opacity= "1";   
+             
     });
 
 })();
