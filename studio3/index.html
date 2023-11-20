@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bayon&family=Bungee&family=Bungee+Inline&family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <img src="./images/twink2.png" id="twink" alt="stars" width="1220" height="125px">
+    <h1>Alien PIG Game</h1>
+    <h2 id="desc">Take Over the Galaxy!</h2>
+
+    <img src="./images/alien1.png" id="alien1" class="hidden" alt="alienplayer1" width="292px" height="371px">
+    <img src="./images/alien2.png" id="alien2" class="hidden" alt="alienplayer2" width="292px" height="371px">
+    
+    <div id="people" class="hidden">
+        <h3 id="play1">Player 1</h3> 
+        <h3 id="play2">Player 2</h3>
+    </div>
+
+    <div id="overlay" class="showing">
+        <article id="card">
+            <p class="intro"><strong>Instructions:</strong> There are two alien players. The first player is randomized and rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher takes over the galaxy and wins!.</p> 
+            <p class="intro"><strong>Warning:</strong> If you roll two "ones" (snake eyes), your current score gets zeroed out.</p>
+
+            <button class="close">START</button>
+        </article>
+    </div>
+
+
+    
+    <div id="gamecontrol">
+        <h2 id="starter">Start a Game</h2> 
+        <p id="namer">Enter Player Names:</p>
+            <form>
+                <label for="name1">Player 1</label>
+                <input type= "text" id="name1" >
+        
+                <label for="name2">Player 2</label>
+                <input type= "text" id="name2">
+            </form>           
+        <button id="startgame">PLAY</button>
+    </div>
+
+
+    <article id="bud">
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+        <div id="exit"></div>
+    </article>
+    
+</body>
+</html>

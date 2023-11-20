@@ -1,0 +1,258 @@
+body {
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 1.2em;
+    background: linear-gradient(180deg, rgba(56,53,180,1) 0%, rgba(77,35,131,1) 64%, rgba(0,0,0,1) 100%);
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#twink{
+    position:  absolute;
+    z-index: -1;
+    top: -12px;
+    left: 100px;
+}
+
+#alien1{
+    position: absolute;
+    top:240px;
+    left:30px;
+    z-index: -1;
+}
+
+#alien2{
+    position: absolute;
+    top:240px;
+    left:1030px;
+    z-index: -1;
+}
+
+#bud{
+    text-align: center;
+}
+
+#gamecontrol{
+    text-align: center;
+
+}
+
+label{
+    padding: 20px;
+    font-family: 'Bungee';
+    color: #a2f4ff;
+}
+
+form{
+    padding: 25px;
+}
+
+input{
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid #6feeff;;
+}
+
+#namer{
+    font-family:'Kanit';
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+img{
+    padding: 30px;
+}
+
+#score {
+   padding-top: 10px; 
+   font-family: 'Bayon';
+   font-size: 25px;
+   color: #FFFF;
+}
+
+
+#game {
+    font-family: 'Bayon';
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-top: -330px;
+    padding-bottom: 5px;
+}
+
+h1{
+    padding: 10px;
+    font-family: 'Bangers';
+    color: #66EDFF;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 4px 5px rgba(34, 34, 34, 0.9);
+}
+
+#desc{
+    font-family: 'Bangers';
+    color: #66EDFF;
+    text-align: center;
+    text-shadow: 1px 4px 5px rgba(34, 34, 34, 0.9);
+    font-size: 35px;
+}
+
+#starter{
+    font-family: 'Bungee Inline', sans-serif;
+    color:#ccf9ff;
+    font-size: 40px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 8px 0px rgb(122, 122, 122);
+}
+
+#people{
+    display: flex;
+    justify-content: space-between ;
+    text-shadow: 1px 4px 5px rgba(62, 62, 62, 0.5);
+    margin-top: 80px;
+}
+
+h3{
+    font-family: 'Bungee Inline';
+    color:#66EDFF;
+    font-size: 26px;
+}
+
+.intro{
+    font-family:'Kanit';
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay #card {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 53%;
+    left: 50%;
+    background: rgb(11,34,72);
+    background: linear-gradient(87deg, rgba(11,34,72,1) 0%, rgba(2,6,26,1) 100%);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.close{
+    background-color: rgb(176, 227, 255);
+    color: #333;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Bungee';
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.close:hover{
+    background-color: rgb(82, 195, 255);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+} 
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+} 
+
+
+
+#roll, #rollagain, #pass {
+    background: rgb(92,89,255);
+    background: linear-gradient(87deg, rgba(92,89,255,1) 0%, rgba(81,191,253,0.5) 100%);
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-family: 'Bungee';
+    color: white;
+    outline: none;
+    border: none;
+    padding: 14px;
+}
+
+#roll{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#rollagain{
+    margin-right: 80px;
+}
+#pass{
+    margin-left: -30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#exit{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#quit {
+    font-family: 'Bungee';
+    font-size: 12px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #FF5959;
+    color: #FF5959;
+    padding: 10px;
+}
+
+#startgame{
+    background: rgb(0,170,89);
+    background: linear-gradient(87deg, rgba(0,170,89,1) 0%, rgba(85,255,176,1) 100%);
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Bungee';
+    font-size: 20px;
+    color: rgb(0, 75, 59);
+    outline: none;
+    border: none;
+    padding: 14px;
+    margin-top: 30px;
+}
+
+#roll:hover , #rollagain:hover, #pass:hover{
+    border: 2.5px solid rgb(0, 238, 255);
+}
+
+#startgame:hover{
+    border: 2.5px solid rgb(72, 255, 151);
+}
+
+#quit:hover{
+    background-color: #ffd3d3;
+}
