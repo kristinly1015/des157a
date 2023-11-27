@@ -4,6 +4,7 @@ body {
     padding: 50px;
     max-width: 1050px;
     margin: auto;
+    background-size: contain;
 }
 
 section {

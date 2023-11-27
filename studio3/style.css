@@ -26,7 +26,7 @@ body {
 #alien2{
     position: absolute;
     top:240px;
-    left:1030px;
+    left:72%;
     z-index: -1;
 }
 

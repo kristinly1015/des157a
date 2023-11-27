@@ -7,8 +7,11 @@
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
-    const input1 = document.querySelector('#name1').value;
-    const input2 = document.querySelector('#name2').value;
+    const sound1 = new Audio('sounds/futuristic.mp3');
+    const sound2 = new Audio('sounds/rollsound.mp3');
+    const sound3 = new Audio('sounds/buttonswitch.mp3');
+    const input1 = document.querySelector('#name1');
+    const input2 = document.querySelector('#name2');
 
     const gameData = {
         dice: ['./images/1die.png', './images/2die.png', './images/3die.png', './images/4die.png', './images/5die.png', './images/6die.png'],
@@ -47,17 +50,26 @@
 
     startGame.addEventListener('click', function(){
         //random set of game index
-
-        // document.querySelector('#play1').innerHTML= `${input1}`;
-        // document.querySelector('#play2').innerHTML= `${input2}`;
-
+        
         document.querySelector('#people').className=
         'showing'; 
-  
+        document.querySelector('footer').className='showing';
         document.querySelector('#alien1').className=
         'showing'; 
         document.querySelector('#alien2').className=
         'showing'; 
+
+
+        document.querySelector('#play1').innerHTML= `${document.querySelector('#name1').value}`;
+        document.querySelector('#play2').innerHTML= `${document.querySelector('#name2').value}`;
+
+        if(document.querySelector('#name1').value==''){
+            document.querySelector('#play1').innerHTML="Player 1";
+        }
+
+        if(document.querySelector('#name2').value==''){
+            document.querySelector('#play2').innerHTML="Player 2";
+        }
 
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);    
@@ -71,11 +83,24 @@
         setUpTurn();
     });
 
+
+    startGame.addEventListener('mouseover', function(){
+        sound1.play();
+    });
+
+
+
     function setUpTurn(){
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
         actionArea.innerHTML= '<button id="roll">Roll the Dice</button>';
         document.getElementById('roll').addEventListener('click', function(){
             throwDice();
+        });
+        document.getElementById('roll').addEventListener('mouseover', function(){
+            sound3.play();
+        });
+        document.getElementById('roll').addEventListener('mousedown', function(){
+            sound2.play();
         });
     }
 
@@ -112,10 +137,21 @@
                 throwDice();
             });
 
+            document.getElementById('rollagain').addEventListener('mouseover', function(){
+                sound3.play();
+            });
+            document.getElementById('rollagain').addEventListener('mousedown', function(){
+                sound2.play();
+            });
+
 
             document.getElementById('pass').addEventListener('click', function(){
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setUpTurn();
+            });
+
+            document.getElementById('pass').addEventListener('mouseover', function(){
+                sound3.play();
             });
 
             //check winning conditions
@@ -129,8 +165,11 @@
             actionArea.innerHTML='';
             document.getElementById('quit').innerHTML = "Start a new game";
             document.getElementById('quit').style.backgroundColor = "rgb(90, 255, 123)";
-            document.getElementById('quit').style.borderColor = "green";
+            document.getElementById('quit').style.borderColor = "white";
             document.getElementById('quit').style.color = "rgb(0, 75, 59)";
+            document.getElementById('quit').addEventListener('mouseover', function(){
+                sound1.play();
+            });
         }
 
         else{
@@ -139,11 +178,14 @@
         }
     }
 
+
     function showCurrentScore(){
         score.innerHTML= `<p>${gameData.players[0]} SCORE: <strong>${gameData.score[0]}</strong> ${gameData.players[1]} SCORE: <strong>${gameData.score[1]}</strong> </p>`;
         }
 
     //if user clicks the "close" button on the overlay, the event listener will switch the overlay from showing to hidden, redirecting user back to the main page 
+
+
     document.querySelector('.close').addEventListener('click',function(event){
         event.preventDefault();
         document.querySelector('#overlay').className=
