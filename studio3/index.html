@@ -12,17 +12,24 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <img src="./images/twink2.png" id="twink" alt="stars" width="1220" height="125px">
-    <h1>Alien PIG Game</h1>
+    <img src="./images/ground.png" id="ground" alt="floor" width="1440" height="256">
+    <img src="./images/twink2.png" id="twink" alt="stars" width="1220" height="125">
+    <h1>The Alien Game</h1>
     <h2 id="desc">Take Over the Galaxy!</h2>
 
-    <img src="./images/alien1.png" id="alien1" class="hidden" alt="alienplayer1" width="292px" height="371px">
-    <img src="./images/alien2.png" id="alien2" class="hidden" alt="alienplayer2" width="292px" height="371px">
-    
+
     <div id="people" class="hidden">
-        <h3 id="play1">Player 1</h3> 
-        <h3 id="play2">Player 2</h3>
+        <div class="sep">
+            <h3 id="play1">Player 1</h3>
+            <img src="./images/alien1.png" id="alien1" alt="alienplayer1" width="292" height="371">
+        </div>
+
+        <div class="sep">
+            <h3 id="play2">Player 2</h3>
+            <img src="./images/alien2.png" id="alien2" alt="alienplayer2" width="292" height="371">
+        </div>
     </div>
+
 
     <div id="overlay" class="showing">
         <article id="card">
@@ -56,7 +63,7 @@
         <div id="exit"></div>
     </article>
 
-    <footer class="hidden"><a href="sources.html">Sources</a></footer>
+    <footer class="hidden"><a href="sources.html">Cited Sources</a></footer>
     
 </body>
 </html>
