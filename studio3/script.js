@@ -15,7 +15,7 @@
     //variables for the game data
     const gameData = {
         dice: ['./images/1die.png', './images/2die.png', './images/3die.png', './images/4die.png', './images/5die.png', './images/6die.png'],
-        players: ['player 1', 'player 2'],
+        players: ['Alien 1', 'Alien 2'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -63,10 +63,10 @@
 
         //if no values are inputted, the default names remain for player 1 and 2
         if(document.querySelector('#name1').value==''){
-            document.querySelector('#play1').innerHTML="Player 1";
+            document.querySelector('#play1').innerHTML="Alien 1";
         }
         if(document.querySelector('#name2').value==''){
-            document.querySelector('#play2').innerHTML="Player 2";
+            document.querySelector('#play2').innerHTML="Alien 2";
         }
 
         //randomize player turn
