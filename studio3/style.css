@@ -52,6 +52,35 @@ body {
     margin-left: -30px;
 }
 
+#sect1{ 
+    padding: 20px;
+    font-family: 'Bungee';
+    color:#ccf6f6;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+#sect2{
+    font-family: 'Bungee';
+    color:#ccf6f6;
+    font-size: 15px;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 #people{
     display: flex;
     justify-content: space-between;
@@ -61,7 +90,7 @@ body {
 
 .sep{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 footer{
@@ -131,12 +160,16 @@ img{
    color: #FFFF;
 }
 
+strong{
+    color: #66EDFF;
+}
+
 
 #game {
     font-family: 'Bayon';
     color: #FFFFFF;
     font-size: 25px;
-    margin-top: -330px;
+    margin-top: -335px;
     padding-bottom: 5px;
 }
 
@@ -173,10 +206,12 @@ button:hover{
 
 
 h3{
+    margin-top: -10px;
     font-family: 'Bungee Inline';
     color:#66EDFF;
     font-size: 26px;
 }
+
 
 #sound{
     font-family: 'Bungee Inline';
@@ -210,6 +245,7 @@ ul li a:hover{
 
 .intro{
     font-family:'Kanit';
+    line-height: 1.4em;
     font-weight: 300;
     color: #FFFFFF;
     font-size: 17px;
@@ -324,7 +360,7 @@ ul li a:hover{
     outline: none;
     border: none;
     padding: 14px;
-    margin-top: 30px;
+    margin-top: 18px;
 }
 
 #roll:hover , #rollagain:hover, #pass:hover{

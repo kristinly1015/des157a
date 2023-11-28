@@ -52,7 +52,17 @@
         //random set of game index
         
         //once play button is clicked, characters and game shows up
-        document.querySelector('#people').className=
+        document.querySelector('#play1').className=
+        'showing'; 
+        document.querySelector('#play2').className=
+        'showing'; 
+        document.querySelector('#alien1').className=
+        'showing'; 
+        document.querySelector('#alien2').className=
+        'showing'; 
+        document.querySelector('#sect1').className=
+        'showing'; 
+        document.querySelector('#sect2').className=
         'showing'; 
         document.querySelector('footer').className='showing';
    
@@ -64,9 +74,13 @@
         //if no values are inputted, the default names remain for player 1 and 2
         if(document.querySelector('#name1').value==''){
             document.querySelector('#play1').innerHTML="Alien 1";
+            document.querySelector('#sect1').className=
+            'hidden'; 
         }
         if(document.querySelector('#name2').value==''){
             document.querySelector('#play2').innerHTML="Alien 2";
+            document.querySelector('#sect2').className=
+            'hidden'; 
         }
 
         //randomize player turn
@@ -181,7 +195,7 @@
     //show ending game score if player wins
     function checkWinningConditions(){
         if(gameData.score[gameData.index] > gameData.gameEnd){
-            score.innerHTML = `<h2>${gameData.players[gameData.index]} wins the game with ${gameData.score[gameData.index]} points</h2>`;
+            score.innerHTML = `<h2>${gameData.players[gameData.index]} wins the game with <strong>${gameData.score[gameData.index]}</strong> points</h2>`;
             actionArea.innerHTML='';
 
             //swap quit button to a start new game option 
