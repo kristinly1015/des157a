@@ -12,7 +12,9 @@ body {
     position:  absolute;
     z-index: -1;
     top: -12px;
-    left: 100px;
+    left: 50px;
+    width: 90%;
+    height: 20%;
     animation-name: starry;
     animation-timing-function: linear;
     animation-duration: 1.5s;
@@ -33,6 +35,7 @@ body {
     position:  absolute;
     z-index: -1;
     width: 100vw;
+    height: 36vh;
     top: 64%;
     left: 0;
     padding: 0px;
@@ -85,7 +88,7 @@ body {
     display: flex;
     justify-content: space-between;
     text-shadow: 1px 4px 5px rgba(62, 62, 62, 0.5);
-    margin-top: 80px;
+    margin-top: 5%;
 }
 
 .sep{
@@ -374,3 +377,5 @@ ul li a:hover{
 #quit:hover{
     background-color: #ffd3d3;
 }
+
+/* media query 1400px+ people margin-top= 12% */
