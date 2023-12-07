@@ -42,15 +42,32 @@ body {
     opacity: 70%;
 }
 
+
 #ufo{
     position: absolute;
     z-index: -2;
     width: 90vw;
-    height: 105vh;
+    height: 100vh;
     top: -5%;
     left: 6%;
     padding: 0;
+    animation-name: space;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
 }
+
+
+@keyframes space {
+    0%   {top: 0%; }
+    25%  {top: -8%;}
+    50%  {top: 0%; } 
+    75%  {top: -8%; } 
+    100% {top: 0%; }
+}
+
+    
 
 #alien1{
     position: absolute;
@@ -62,7 +79,6 @@ body {
     position: absolute;
     z-index: -1;
     margin-top: 45px;
-    margin-left: -30px;
 }
 
 #sect1{ 
@@ -114,6 +130,7 @@ footer{
 footer a {
     text-decoration: none;
     font-family: 'Kanit';
+    font-weight: bold;
     color: rgb(209, 161, 152);
     font-size: 12px;
     border-bottom: 1px solid #ffd3d3;
@@ -130,13 +147,6 @@ footer a:hover{
 
 #gamecontrol{
     text-align: center;
-    /* background-color: rgba(123, 73, 198, 0.501);
-    width: 700px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: auto;
-    border-radius: 15px;
-    margin-top: -75px; */
 }
 
 label{
@@ -156,9 +166,9 @@ input{
 }
 
 #namer{
-    font-family:'Kanit';
+    font-family:'Bayon';
     font-weight: 300;
-    font-size: 25px;
+    font-size: 26px;
     color: #FFFFFF;
 }
 
@@ -169,7 +179,7 @@ img{
 #score {
    padding-top: 10px; 
    font-family: 'Bayon';
-   font-size: 25px;
+   font-size: 26px;
    color: #FFFF;
 }
 
@@ -182,7 +192,7 @@ strong{
     font-family: 'Bayon';
     color: #FFFFFF;
     font-size: 25px;
-    margin-top: -335px;
+    margin-top: -230px;
     padding-bottom: 5px;
 }
 
@@ -192,14 +202,14 @@ h1{
     color: #66EDFF;
     font-size: 50px;
     text-align: center;
-    text-shadow: 1px 4px 5px rgba(34, 34, 34, 0.9);
+    text-shadow: 1px 4px 5px rgba(59, 58, 58, 0.7);
 }
 
 #desc{
     font-family: 'Bangers';
     color: #66EDFF;
     text-align: center;
-    text-shadow: 1px 4px 5px rgba(34, 34, 34, 0.9);
+    text-shadow: 1px 4px 5px rgba(59, 58, 58, 0.7);
     font-size: 35px;
 }
 
@@ -237,7 +247,7 @@ ul li {
     margin-top: 40px;
     margin-left: -40px;
     padding: 10px;
-    font-family:'Kanit';
+    font-family:'Bayon';
     font-weight: 300;
     color: #FFFFFF;
     font-size: 17px;
@@ -247,7 +257,7 @@ ul li {
 
 ul li a{
     text-decoration: none;
-    font-family:'Kanit';
+    font-family:'Bayon';
     font-weight: 300;
     color:#66EDFF;
 }
@@ -267,7 +277,7 @@ ul li a:hover{
 
 #overlay {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     top: 0;
     left:0;
     width: 100vw;
@@ -277,7 +287,7 @@ ul li a:hover{
     transition-timing-function: ease;
 }
 
-#overlay #card {
+#overlay .card {
     position: absolute;
     transform: translate(-50%,-50%);
     top: 53%;
@@ -286,6 +296,228 @@ ul li a:hover{
     background: linear-gradient(87deg, rgba(11,34,72,1) 0%, rgba(2,6,26,1) 100%);
     border-radius: 10px;
     padding: 50px;
+}
+
+#panel{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+
+#panel .card{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 830px;
+    top: 53%;
+    left: 50%;
+    border-radius: 10px;
+    background: rgb(11,34,72);
+    background: linear-gradient(87deg, rgba(11,34,72,1) 0%, rgba(2,6,26,1) 100%);
+}
+
+
+#panell{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#panell .card{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 830px;
+    top: 53%;
+    left: 50%;
+    border-radius: 10px;
+    background: rgb(11,34,72);
+    background: linear-gradient(87deg, rgba(11,34,72,1) 0%, rgba(2,6,26,1) 100%);
+}
+
+#panelll{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+
+#panelll .card{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 53%;
+    left: 50%;
+    border-radius: 10px;
+    background: rgb(11,34,72);
+    background: linear-gradient(87deg, rgba(11,34,72,1) 0%, rgba(2,6,26,1) 100%);
+}
+
+#panel2{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 60px
+}
+
+.panel3{
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+    margin-top: 5px;
+}
+
+
+#next2{
+    background-color: rgb(176, 227, 255);
+    color: #333;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Bungee';
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#next2:hover{
+    cursor: pointer;
+    background-color: rgb(82, 195, 255);
+}
+
+#next3{
+    background-color: rgb(176, 227, 255);
+    color: #333;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Bungee';
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#next3:hover{
+    cursor: pointer;
+    background-color: rgb(82, 195, 255);
+}
+
+#next1{
+    background-color: rgb(176, 227, 255);
+    color: #333;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'Bungee';
+    font-size: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#next1:hover{
+    cursor: pointer;
+    background-color: rgb(82, 195, 255);
+}
+
+#canceler{
+    font-family: 'Bungee';
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(176, 227, 255);
+    color: rgb(176, 227, 255);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#canceler:hover{
+    cursor: pointer;
+    background-color: rgb(210, 227, 236);
+    border: 2px solid rgb(0, 151, 233);
+    color: rgb(0, 151, 233);
+}
+
+#canceler2{
+    font-family: 'Bungee';
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(176, 227, 255);
+    color: rgb(176, 227, 255);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#canceler2:hover{
+    background-color: rgb(210, 227, 236);
+    border: 2px solid rgb(0, 151, 233);
+    color: rgb(0, 151, 233);
+}
+
+#canceler3{
+    font-family: 'Bungee';
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(176, 227, 255);
+    color: rgb(176, 227, 255);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#canceler3:hover{
+    background-color: rgb(210, 227, 236);
+    border: 2px solid rgb(0, 151, 233);
+    color: rgb(0, 151, 233);
 }
 
 .close{
@@ -351,13 +583,13 @@ ul li a:hover{
 
 #quit {
     font-family: 'Bungee';
-    font-size: 12px;
+    font-size: 14px;
     outline: none;
     border: none;
     border-radius: 10px;
     background-color: transparent;
-    border: 2px solid #FF5959;
-    color: #FF5959;
+    border: 2px solid rgb(125, 203, 255);
+    color: rgb(125, 203, 255);
     padding: 10px;
 }
 
@@ -385,7 +617,38 @@ ul li a:hover{
 }
 
 #quit:hover{
-    background-color: #ffd3d3;
+    background-color:rgb(109, 107, 253);
+    color: white;
 }
 
+#aliens:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+
+#alien3:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+#alien4:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+#alien5:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+#alien6:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+#alien7:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
 /* media query 1400px+ people margin-top= 12% */

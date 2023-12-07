@@ -9,14 +9,14 @@
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
     const sound1 = new Audio('./sounds/futuristic.mp3');
-    const sound2 = new Audio('./sounds/rollsound.mp3');
+    const sound2 = new Audio('./sounds/explosion.mp3');
     const sound3 = new Audio('./sounds/buttonswitch.mp3');
 
     //variables for the game data
     const gameData = {
         dice: ['./images/1die.png', './images/2die.png', './images/3die.png', './images/4die.png', './images/5die.png', './images/6die.png'],
         players: ['Alien 1', 'Alien 2'],
-        characters:['./images/alien1.png','./images/alien3.png', './images/alien4.png'],
+        // characters:['./images/alien1.png','./images/alien3.png', './images/alien4.png'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -154,7 +154,7 @@
         else if(gameData.roll1 === 1 || gameData.roll2 ===1){
             //console.log("A one was rolled!");
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            game.innerHTML += `<p>Sorry, one of your rolls was a 1, switching to ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML += `<p>Sorry, you threw a cold meteor, switching to ${gameData.players[gameData.index]}</p>`;
             setTimeout(setUpTurn,2000);
         }
         else {
@@ -196,7 +196,7 @@
     //show ending game score if player wins
     function checkWinningConditions(){
         if(gameData.score[gameData.index] > gameData.gameEnd){
-            score.innerHTML = `<h2>${gameData.players[gameData.index]} wins the game with <strong>${gameData.score[gameData.index]}</strong> points</h2>`;
+            score.innerHTML = `<h2>${gameData.players[gameData.index]} takes over the galaxy with <strong>${gameData.score[gameData.index]}</strong> points</h2>`;
             actionArea.innerHTML='';
 
             //swap quit button to a start new game option 
@@ -227,6 +227,8 @@
         event.preventDefault();
         document.querySelector('#overlay').className=
         'hidden'; 
+        document.querySelector('#panelll').className=
+        'showing'; 
     });
 
     //overlay also disappears when escape key is pressed
@@ -234,6 +236,117 @@
         if(event.key === 'Escape'){
             document.querySelector('#overlay').className= 'hidden';
         }
-    });    
+    });       
+
+    document.querySelector('#next1').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#panelll').className=
+        'hidden'; 
+        document.querySelector('#panel').className=
+        'showing'; 
+    });
+
+    document.querySelector('#next2').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#panel').className=
+        'hidden'; 
+        document.querySelector('#panell').className=
+        'showing'; 
+    });
+
+    document.querySelector('#next3').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#panell').className=
+        'hidden'; 
+        document.querySelector('#panelll').className=
+        'hidden'; 
+        document.querySelector('#panel').className=
+        'hidden';
+        document.querySelector('#overlay').className=
+        'hidden';  
+    });
+
+
+    document.querySelector('#canceler').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#panell').className=
+        'hidden'; 
+        document.querySelector('#panelll').className=
+        'hidden'; 
+        document.querySelector('#panel').className=
+        'hidden'; 
+        document.querySelector('#overlay').className=
+        'showing'; 
+    });
+
+    document.querySelector('#canceler2').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#panell').className=
+        'hidden'; 
+        document.querySelector('#panelll').className=
+        'showing'; 
+        document.querySelector('#panel').className=
+        'hidden'; 
+        document.querySelector('#overlay').className=
+        'hidden'; 
+    });
+
+    document.querySelector('#canceler3').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#panell').className=
+        'hidden'; 
+        document.querySelector('#panelll').className=
+        'hidden'; 
+        document.querySelector('#panel').className=
+        'showing'; 
+        document.querySelector('#overlay').className=
+        'hidden'; 
+    });
+
+
+    document.querySelector('#aliens').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#aliens').src= './images/pick1.png';
+        document.querySelector('#alien3').src= './images/alien3.png';
+        document.querySelector('#alien4').src= './images/alien4.png';
+        document.querySelector('#alien1').src = './images/alien1.png';
+    });
+
+    document.querySelector('#alien3').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#alien3').src= './images/pick3.png';
+        document.querySelector('#aliens').src= './images/alien1.png';
+        document.querySelector('#alien4').src= './images/alien4.png';
+        document.querySelector('#alien1').src = './images/alien3.png';
+    });
+
+    document.querySelector('#alien4').addEventListener('click',function(event){
+        event.preventDefault();
+        document.querySelector('#alien4').src= './images/pick2.png';
+        document.querySelector('#aliens').src= './images/alien1.png';
+        document.querySelector('#alien3').src= './images/alien3.png';
+        document.querySelector('#alien1').src = './images/alien4.png';
+    });
+
+    document.querySelector('#alien5').addEventListener('click',function(){
+        document.querySelector('#alien5').src= './images/pick3.png';
+        document.querySelector('#alien6').src= './images/alien1.png';
+        document.querySelector('#alien7').src= './images/alien4.png';
+        document.querySelector('#alien2').src = './images/alien3.png';
+    });
+
+    document.querySelector('#alien6').addEventListener('click',function(){
+        document.querySelector('#alien6').src= './images/pick1.png';
+        document.querySelector('#alien5').src= './images/alien3.png';
+        document.querySelector('#alien7').src= './images/alien4.png';
+        document.querySelector('#alien2').src = './images/alien1.png';
+    });
+
+    document.querySelector('#alien7').addEventListener('click',function(){
+        document.querySelector('#alien7').src= './images/pick2.png';
+        document.querySelector('#alien5').src= './images/alien3.png';
+        document.querySelector('#alien6').src= './images/alien1.png';
+        document.querySelector('#alien2').src = './images/alien4.png';
+    });
     
 })();

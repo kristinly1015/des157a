@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Alien Game</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bayon&family=Bungee&family=Bungee+Inline&family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <img src="./images/ground.png" id="ground" alt="floor" width="1440" height="256">
+    <img src="./images/twink2.png" id="twink" alt="stars" width="1220" height="125">
+    <h1>The Alien Game</h1>
+    <h2 id="desc">Take Over the Galaxy!</h2>
+
+    <div id="people">
+        <div class="sep">
+            <div id="sect">
+                <h2 id="sect1" class="hidden">Alien 1</h2>
+                <h3 id="play1" class="hidden">Alien 1</h3>
+            </div>
+            <img src="./images/alien1.png" id="alien1" class="hidden" alt="alienplayer1" width="292" height="371">
+        </div>
+
+        <div class="sep">
+            <div id="sector">
+                <h2 id="sect2" class="hidden">Alien 2</h2>
+                <h3 id="play2" class="hidden">Alien 2</h3>
+            </div>
+            <img src="./images/alien1.png" id="alien2" class="hidden" alt="alienplayer2" width="292" height="371">
+        </div>
+    </div>
+
+
+    <div id="gamecontrol">
+        <img src="./images/spaceship.png" alt="ship" id="ufo" width="1426" height="887">
+        <h2 id="starter">Start Game</h2>          
+        <button id="startgame">PLAY</button>
+    </div>
+
+    <div id="panell" class="hidden">
+        <article class="card">
+            <h3>Choose a character for Player 2:</h3> 
+        
+            <img src="./images/alien3.png" id="alien5" alt="alienplayer3" width="192" height="231">
+            <img src="./images/alien1.png" id="alien6" alt="alienplayer1" width="192" height="231">
+            <img src="./images/alien4.png" id="alien7" alt="alienplayer4" width="192" height="231">
+      
+
+        <div class="panel3">
+            <button id="canceler3">BACK</button>
+            <button id="next3">NEXT</button>
+        </div>
+        </article>
+    </div>
+
+
+    <div id="panel" class="hidden">
+        <article class="card">
+            <h3>Choose a character for Player 1:</h3> 
+       
+            <img src="./images/alien3.png" id="alien3" alt="alienplayer3" width="192" height="231">
+            <img src="./images/alien1.png" id="aliens" alt="alienplayer1" width="192" height="231">
+            <img src="./images/alien4.png" id="alien4" alt="alienplayer4" width="192" height="231">
+      
+
+        <div class="panel3">
+            <button id="canceler2">BACK</button>
+            <button id="next2">NEXT</button>
+        </div>
+        </article>
+    </div>
+
+
+    <div id="panelll" class="hidden">
+        <article class="card">
+            <h3>Enter Player Names:</h3>
+            <form>
+                <label for="name1">Player 1</label>
+                <input type= "text" id="name1" placeholder="Alien 1">
+        
+                <label for="name2">Player 2</label>
+                <input type= "text" id="name2" placeholder="Alien 2">
+
+                <div id="panel2">
+                    <button id="canceler">BACK</button>
+                    <button id="next1">NEXT</button>
+                </div>
+            </form>  
+        </article>
+    </div>
+
+    <div id="overlay" class="showing">
+        <article class="card">
+            <p class="intro"><strong>Instructions:</strong> There are two alien players. The first player is randomized and your goal is to throw meteor(s) at the other player. If you throw a single cold meteor, your turn is skipped. After each throw, the player can either throw again, (assuming a cold meteor wasn't rolled) or pass the turn. The first person who reaches 30 meteor throws wins and takes over the galaxy!</p> 
+            
+            <p class="intro"><strong>Warning:</strong> If you throw two single "cold meteors" (galactic error), your score gets zeroed out.</p>
+
+            <button class="close">START</button>
+        </article>
+    </div>
+
+
+    <article id="bud">
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+        <div id="exit"></div>
+    </article>
+
+    <footer class="hidden"><a href="sources.html">Cited Sources</a></footer>
+    
+</body>
+</html>
