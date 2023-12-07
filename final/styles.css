@@ -150,9 +150,10 @@ footer a:hover{
 }
 
 label{
-    padding: 20px;
     font-family: 'Bungee';
     color: #a2f4ff;
+    padding: 5px;
+    text-wrap: nowrap;
 }
 
 form{
@@ -160,7 +161,7 @@ form{
 }
 
 input{
-    padding: 3px;
+    padding: 50;
     border-radius: 5px;
     border: 2px solid #6feeff;;
 }
@@ -382,6 +383,11 @@ ul li a:hover{
     border-radius: 10px;
     background: rgb(11,34,72);
     background: linear-gradient(87deg, rgba(11,34,72,1) 0%, rgba(2,6,26,1) 100%);
+}
+
+#milk{
+    display: flex;
+    gap: 20px;
 }
 
 #panel2{
